@@ -1,0 +1,795 @@
+$color-blue-with-dark: #003580 
+$color-filters-text: #262626
+$color-aside-block_stroke: #ff8000
+$color-aside-block: #fdf4d8
+$max-width: 1100px
+$min-width: 1000px
+$width-right: 1100px
+$color-dark-with-blue-hover: #00487a
+$color-dark-with-blue: #003580 
+$color-light-with-blue: #1f4e90
+$color-white-with-blue: #f0f7fc
+$color-white: #fff
+$color-transparent: transparent
+$color-yellow: #febb02
+$color-light-with-orange: #fff0e0
+$color-orange-with-bright: #BC5B01
+$color-dark-with-orange: #923e01
+$color-blue: #0071c2
+$color-black: #000000
+$color-light-with-gray: lightgray
+$color-gray: #949494
+$color-orange: #febb02
+$color-dark-gray: #262626
+$color-red: #c00
+$color-green:#008009
+
+body
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif
+    font-size: 14px
+    margin: 0
+    padding: 0
+    font-weight: normal
+.page
+    overflow: hidden
+
+// ----------------------Top----------------------
+
+.div__top
+    background-color: $color-blue-with-dark
+
+.div__top-content
+    width: 78%
+    max-width: $max-width
+    margin: auto
+    display: flex
+    flex-flow: row
+    padding: 10px 0
+
+.div__buttons
+    justify-content: flex-end
+    margin-left: auto
+    display: flex
+    flex-flow: row
+    flex-wrap: wrap
+
+.div__title
+    padding-bottom: 5px
+    font-weight: bold
+    font-size: x-large
+    cursor: pointer
+    color: $color-white
+    display: block
+    margin-block: auto
+    margin-left: 10px
+
+.div__button-top
+    margin: 5px
+    font-weight: bold
+    font-size: large
+    cursor: pointer
+    color: $color-white
+    border-radius: 3px
+
+.div__button-top:hover
+    background-color: $color-light-with-blue
+
+.div__currency
+    padding: 10px
+    font-size: 16px
+
+.img__language
+    border-radius: 50%
+    width: 50%
+    padding-block: 10px 
+    display: block
+    margin: auto
+
+.div__question
+    margin: 10px
+    width: 22px
+    aspect-ratio: 1 / 1
+    font-size: 16px
+    font-weight: normal
+    border: 2px solid $color-white
+    border-radius: 50%
+    text-align: center
+
+.button__reg_obj
+    font-weight: bold
+    margin: 10px 5px
+    background-color: $color-transparent
+    border: 1px solid $color-white
+    border-radius: 2px
+    color: $color-white
+    cursor: pointer
+    white-space: nowrap
+    padding: 5px 10px
+    &:hover
+        background-color: $color-light-with-blue
+
+.button__auth
+    font-weight: bold
+    margin: 10px 5px
+    background-color: $color-white
+    border: 1px solid $color-light-with-blue
+    color: $color-blue-with-dark
+    cursor: pointer
+    white-space: nowrap
+    padding: 5px 10px
+    color: $color-blue
+    &:hover
+        background-color: $color-white-with-blue
+
+.div__category
+    width: 78%
+    min-width: $min-width
+    max-width: $max-width
+    margin: auto
+    padding-left: 5px
+    display: flex
+    flex-flow: row
+    margin-block: 10px
+    padding-bottom: 5px
+    
+
+.div__main
+    width: 78%
+    min-width: $min-width
+    max-width: $max-width
+    margin: auto
+    padding-left: 5px
+
+.div__text_page
+    margin: 1px 0
+    color: $color-blue
+    font-size: 12px
+    cursor: pointer
+
+.div__text_page_black
+    margin: 1px 0
+    font-size: 12px
+    cursor: default
+    color: $color-gray
+
+.div__text_next_page
+    font-size: 17px
+    margin: 0 5px
+    font-weight: bold
+    cursor: default
+    vertical-align: top
+
+// ----------------------Left----------------------
+
+.div_left
+    display: grid
+    width: 24%
+    float: left
+
+.div__search
+    width: 100%
+    aspect-ratio: 2 / 3
+    background-color: $color-orange
+    border-radius: 3px
+    display: flex
+    flex-flow: column
+
+.div__search-text
+    padding: 15px 0 0 15px
+    font-size: 20px
+    font-weight: 600
+
+.div__search-text_info
+    padding: 8px 0 0 15px
+    font-size: 12px
+
+.input__search
+    height: 34px
+    margin: 0 15px
+    border-radius: 3px
+    background-repeat: no-repeat
+    background-position: left
+    padding-left: 35px
+    border: none
+
+.select__People
+    height:34px
+    margin: 0 15px
+    border: none
+    border-radius: 3px
+    padding: 5px
+
+.div__search-footer
+    width: 100%
+    padding: 15px
+
+.div__search-checkbox
+    width: 65%
+    font-size: 12px
+    float: left
+    cursor: pointer
+
+.div__search-checkbox input
+    padding-bottom: 5px
+    margin: 0 5px 0 0
+
+.div__search-question
+    display: grid
+    float: right
+    margin-right: 30px
+    width: 15px
+    font-size: 10px
+    border: 1px solid $color-black
+    border-radius: 50%
+    text-align: center
+
+.button__search
+    background-color: $color-blue
+    color: $color-white
+    margin: 0 15px
+    padding-block: 16px
+    border: none
+    border-radius: 3px
+    font-size: 16px
+    &:hover
+        background-color: #00487a
+
+.div__filters
+    display: flex
+    flex-flow: column
+    margin-block: 10px
+    width: 100%
+    border: 1px solid $color-light-with-gray
+    border-radius: 3px
+
+.div__filters-item
+    border-block-end: 1px solid $color-light-with-gray
+    display: flex
+    flex-flow: column
+
+.div__filters-item-end
+    display: flex
+    flex-flow: column
+
+.div__name-filters-text
+    padding: 8px
+    font-size: 16px
+    font-weight: bold
+
+.div__filters-text_bold
+    padding: 10px 15px
+    font-size: 14px
+    font-weight: bold
+
+.label__filters-checkbox 
+    margin: 0 0 15px 15px
+    display: block
+    width: 35px
+    height: 20px
+    cursor: pointer
+    position: relative
+
+.label__filters-checkbox input
+    display: none
+
+.label__filters-checkbox input:checked+.toggler-slider
+    background-color: $color-blue
+
+.label__filters-checkbox .toggler-slider
+    background-color: $color-gray
+    position: absolute
+    border-radius: 100px
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    -webkit-transition: all 300ms ease
+    transition: all 300ms ease
+
+.label__filters-checkbox .toggler-knob 
+    position: absolute
+    -webkit-transition: all 300ms ease
+    transition: all 300ms ease
+
+.label__filters-checkbox.toggler-style input:checked+.toggler-slider .toggler-knob
+    left: calc(100% - 15px - 3px)
+
+.label__filters-checkbox.toggler-style .toggler-knob 
+    width: calc(20px - 6px)
+    height: calc(20px - 6px)
+    border-radius: 50%
+    left: 3px
+    top: 3px
+    background-color: #fff
+
+.div__name-filters-checkbox
+    width: 170px
+    margin-left: 45px
+
+.input__filters-checkbox
+    margin: 5px 15px
+
+.label__checkbox
+    margin: 0 0 10px 15px
+    padding-left: 30px
+    position: relative
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    cursor: pointer
+
+.input__checkbox
+    position: absolute
+    opacity: 0
+
+.input__checkbox:focus:checked ~ .span__checkbox 
+      border: 1px solid $color-blue
+
+.input__checkbox:checked ~ .span__checkbox  
+      color: $color-white
+      background: $color-blue url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxMiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTIgOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPHBhdGggZD0iTTQuNTc1IDguOTc3cy0uNDA0LS4wMDctLjUzNi0uMTY1TC4wNTcgNS42NGwuODI5LTEuMjI3TDQuNDcgNy4yNjggMTAuOTIxLjA4NmwuOTIzIDEuMTAzLTYuODYzIDcuNjRjLS4xMzQtLjAwMy0uNDA2LjE0OC0uNDA2LjE0OHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+) 50% 40% no-repeat
+      border: 1px solid $color-blue
+    
+.span__checkbox 
+    border-radius: 3px
+    position: absolute
+    left: 0
+    width:  18px
+    height: 18px
+    background-color: $color-white
+    border: 1px solid $color-gray
+    pointer-events: none
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+.div__name-count-filters
+    height: 100%
+    width: 95%
+    font-size: 13px
+    display: flex
+    flex-flow: row
+    flex-wrap: wrap
+
+.div__name-filters
+    width: 90%
+
+.div__count-filters
+    display: flex
+    align-items: flex-end
+    color: $color-gray
+    margin-left: auto
+    
+.div__filters-prompt
+    font-size: 12px
+    width: 100%
+    color: $color-gray
+
+.div__drop-down-list
+    width: 72%
+    margin: 5px 0 10px 15px
+    color: $color-blue
+    cursor: pointer
+    background-image: url(../images/drop-down.png)
+    background-repeat: no-repeat
+    background-position: right
+    &:hover
+        text-decoration: underline
+
+.div__filters-name-calculate
+    margin-inline: 10px
+    margin-block: auto
+
+.div__filters-calculate
+    height: 100%
+    width: 100%
+    font-size: 13px
+    display: flex
+    flex-flow: row
+    flex-wrap: wrap
+
+.div__calculate
+    display: flex
+    flex-flow: row
+    margin: 10px
+    width: 120px
+    height: 40px
+    border: 1px solid $color-gray
+
+.div__calculate-minus
+    width: 40px
+    aspect-ratio: 1 / 1
+    background-image: url(../images/minus.png)
+    cursor: not-allowed
+
+.div__calculate-value
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 40px
+    aspect-ratio: 1 / 1
+    font-size: 15px
+    font-weight: 600
+    color: $color-gray
+
+.div__calculate-plus
+    width: 40px
+    aspect-ratio: 1 / 1
+    background-image: url(../images/plus.png)
+    cursor: pointer
+
+.div__map
+    margin: 0 5px
+    height: 150px
+    background-image: url(../images/map.png)
+    display: flex
+    flex-flow: column
+    justify-content: center
+    align-items: center
+
+.svg__map-pin
+    width: 100%
+    height: 40px
+    color: $color-blue
+    aspect-ratio: 1 / 1
+    fill: $color-blue
+    &:hover
+        fill: $color-blue-with-dark
+
+.svg__map-pin-circle
+    width: 18px
+    height: 18px
+    position: absolute
+    margin-top: -32px 
+    fill: $color-white
+
+.button__map
+    background-color: $color-blue
+    color: $color-white
+    margin: 10px 15px
+    padding: 12px
+    border: none
+    border-radius: 3px
+    font-size: 13px
+    font-weight: 600
+    cursor: pointer
+    &:hover
+        background-color: #00487a
+
+.div__filters-popular
+    top: 10px
+    position: sticky
+    display: flex
+    flex-flow: column
+    margin-block: 10px
+    width: 100%
+    border: 1px solid $color-light-with-gray
+    border-radius: 3px
+
+.div__filters-popular_end
+    width: 100px
+    height: 2000px
+
+// ----------------------Right----------------------
+
+.div_right
+    display: grid
+    width: 74%
+    float: right
+
+.div_right-top
+    display: flex
+    flex-flow: row
+
+.div__name_right-top
+    display: flex
+    width: 70%
+    height: 70px
+    font-weight: bold
+    font-size: 24px
+    align-items: center
+
+.div__map_righ-top
+    justify-content: flex-end
+    margin-left: auto
+    height: 70px
+    background-image: url(../images/map.png)
+
+.button__map_righ-top
+    background-color: $color-blue
+    color: $color-white
+    margin: 15px 15px
+    padding: 12px
+    border: none
+    border-radius: 3px
+    font-size: 13px
+    font-weight: 600
+    cursor: pointer
+    &:hover
+        background-color: #00487a
+
+.select__filters_rec
+    border-radius: 30px
+    border-block-color: $color-blue
+    color: $color-blue
+    width: 280px
+    height: 36px
+    text-align: left
+    margin: 0 0 10px
+.div__error
+    display: flex
+    flex-flow: row
+    border: 1px solid $color-orange
+    border-radius: 3px
+    background-color: $color-light-with-orange
+    padding: 5px
+
+.svg__error
+    width: 10%
+    height: 20px
+    margin: 10px 5px
+    fill: $color-dark-with-orange
+
+.div__main-error
+    display: flex
+    flex-flow: column
+    padding: 5px
+
+.div__name-error
+    margin: 5px
+    font-weight: bold
+    font-size: 16px
+
+.div__text-error
+    margin: 5px
+
+.div__help_ukraine
+    display: flex
+    flex-flow: row
+    border: 1px solid $color-light-with-gray
+    border-radius: 3px
+    margin: 10px 0 0 0
+    padding: 5px
+
+.svg__help_ukraine
+    width: 5%
+    height: 20px
+    margin: 10px 5px
+    fill: $color-black
+
+.div__main-help_ukraine
+    display: flex
+    flex-flow: column
+    padding: 5px
+
+.div__text_help_ukraine
+    margin: 5px 0px
+    font-weight: bold
+    font-size: 16px
+
+.a__text_search_home
+    margin: 10px 0px
+    font-weight: bold
+    font-size: 16px
+    color: $color-blue
+    text-decoration: none
+
+
+.div__text-error
+    margin: 5px
+
+.div__items
+    display: flex
+    flex-flow: column
+
+.div__item
+    margin-block: 10px
+    padding: 10px
+    border: 1px solid $color-light-with-gray
+    border-radius: 3px
+
+.div__item_vip
+    margin-block: 10px
+    padding: 10px
+    border: 1px solid #3daeff
+
+    border-radius: 3px
+    background-color: #ebf3ff
+
+.img__item-image
+    margin: 5px
+    border-radius: 3px
+    cursor: pointer
+
+.svg__item-like
+    width: 25px
+    height: 25px
+    position: absolute
+    margin: -80px 0 0 80px
+    stroke: $color-white
+    stroke-width: 8px
+    filter: drop-shadow(0 2px 1.5px rgba(0,0,0,.5))
+    fill: rgba(0,0,0,.2)
+    cursor: pointer
+    &:hover
+        fill: rgba(0,0,0,.5)
+
+.div__item-content
+    display: flex
+    flex-flow: row
+    
+
+.div__item-image
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 27%
+
+.div__item-content_full
+    margin-left: 10px
+    width: 73%
+    display: flex
+    flex-flow: column
+
+.div__item-content_top
+    display: flex
+    flex-flow: row
+
+.div__item-content_bottom
+    padding-block: 10px 
+    display: flex
+    flex-flow: row
+
+.div__item-content_left
+    width: 70%
+    margin-top: 5px
+    display: flex
+    flex-flow: column
+
+.div__item-name-row
+    display: flex
+    flex-flow: row
+    height: 30px
+
+.div__item-name
+    font-weight: bold
+    font-size: 20px
+    cursor: pointer
+    color: $color-blue
+    &:hover
+        color: $color-orange-with-bright
+
+.svg__preferred-badge
+    width: 30px
+    margin: 7px
+
+.div__item-address
+    display: flex
+    flex-flow: row
+
+.div__item-address span
+    font-weight: bold
+    color: $color-gray
+    margin-inline: 5px
+    &::after
+        content: "."
+    
+.div__addres-text
+    font-weight: 500
+    font-size: 12px
+    margin: 3px 0
+    text-decoration: underline
+    color: $color-blue
+    cursor: pointer
+
+.div__addres-distance
+    font-size: 12px
+    margin-block: 5px
+
+.div__item-content_right
+    width: 30%
+    display: flex
+    flex-flow: column
+    align-items: flex-end
+
+.div__review-score
+    display: flex
+    flex-flow: row
+    cursor: pointer
+
+.div__item-rating
+    display: flex
+    flex-flow: column
+
+.div__item-score
+    font-size: 16px
+    font-weight: 500
+    color: $color-dark-gray
+
+.div__item-reviews
+    margin-left: auto
+    font-size: 12px
+    color: $color-gray
+
+.div__item-grade
+    width: 32px
+    height: 32px
+    margin: 5px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $color-dark-with-blue
+    color: $color-white
+    font-size: 16px
+    font-weight: bold
+    border-radius: 5px 5px 5px 0
+
+.div__item-location
+    font-size: 14px
+    font-weight: bold
+    color: $color-blue
+    cursor: pointer
+    &:hover
+        text-decoration: underline
+
+.div_item-description
+    padding: 0 10px
+    border: solid
+    border-width: 0 0 0 2px
+    border-color: $color-light-with-gray
+
+.div__name-reccomended
+    padding-block: 2px
+    font-weight: bold
+    font-size: 12px
+
+.div__reccomended
+    padding-block: 2px
+    font-size: 12px
+
+.div__reccomended_breakfast
+    padding-block: 2px
+    font-size: 12px
+    font-weight: bold
+    color: $color-green
+
+.div__reccomended_last_price
+    padding-block: 2px
+    font-size: 12px
+    color: $color-red
+    font-weight: bold
+
+.div__item-text-gray
+    color: $color-gray
+    padding-block: 2px
+    font-size: 12px
+
+.div__item-price
+    font-size: 20px
+    font-weight: 500
+    color: $color-dark-gray
+
+.div__item-button-buy
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 10px
+    padding: 5px 10px
+    border-radius: 3px
+    color: $color-white
+    background-color: $color-blue
+    cursor: pointer
+    &:hover
+        background-color: $color-dark-with-blue-hover
+
+.div__text-button-buy
+    width: 140px
+    font-weight: 500
+
+.svg__item-button-buy
+    width: 16px
+    height: 16px
+    fill: $color-white
+
